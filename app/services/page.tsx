@@ -5,14 +5,7 @@ import Link from 'next/link';
 export default function Services() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
-      <Header>
-        <Link href="/">
-          <span className="sr-only">IR翻訳総合研究所</span>
-          <div className="w-40 h-10 bg-gray-200 flex items-center justify-center text-gray-500">
-            Logo Placeholder
-          </div>
-        </Link>
-      </Header>
+      <Header />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-3xl font-extrabold text-gray-900 text-center mb-8">サービス一覧</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -64,6 +57,5 @@ export default function Services() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
