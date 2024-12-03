@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { useToast, Toast } from "@/components/ui/use-toast"
 import Image from 'next/image'
 
-export default function Seminar({ params }: { params: { number: string } }) {
+export default function Seminar() {
   const [formData, setFormData] = useState({
     type: 'seminar',
     name: '',
