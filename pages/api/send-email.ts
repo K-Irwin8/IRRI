@@ -45,7 +45,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     } else if (type === 'quote') {
       subject = `${name}様からの見積もり依頼をお受け致しました。`;
       emailContent = `
-      　${name}様
+        ${name}様
 
         この度、弊社へ見積もり依頼をくださり誠にありがとうございます。
 
@@ -97,6 +97,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(200).json({ message: 'Email sent successfully' });
   } catch (error) {
     console.error('Error sending email:', error);
-    res.status(500).json({ message: 'Internal Server Error', error: error.message });
+
+    // Narrow down the error type
+    if (error instanceof Error) {
+      res.status(500).json({ message: 'Internal Server Error', error: error.message });
+    } else {
+      res.status(500).json({ message: 'Internal Server Error', error: String(error) });
+    }
   }
 }
