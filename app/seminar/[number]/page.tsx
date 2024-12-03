@@ -136,8 +136,9 @@ export default function Seminar({ params }: { params: { number: string } }) {
             <Textarea id="message" name="message" value={formData.message} onChange={handleChange} className="mt-1" />
           </div>
           <Button type="submit" className="w-full" disabled={loading}>
-            {loading ? "送信中..." : "セミナーに申し込む"}
+          {loading ? "送信中..." : "セミナーに申し込む"}
           </Button>
+
         </form>
       </main>
       <footer className="bg-gray-800 text-white py-6">

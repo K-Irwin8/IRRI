@@ -125,7 +125,10 @@ export default function Quote() {
             <label htmlFor="additionalInfo" className="block text-sm font-medium text-gray-700">追加情報</label>
             <Textarea id="additionalInfo" name="additionalInfo" value={formData.additionalInfo} onChange={handleChange} className="mt-1" />
           </div>
-          <Button type="submit" className="w-full">見積もり依頼を送信</Button>
+          <Button type="submit" className="w-full" disabled={loading}>
+           {loading ? "送信中..." : "見積もり依頼を送信"}
+          </Button>
+
         </form>
       </main>
       <footer className="bg-gray-800 text-white py-6">

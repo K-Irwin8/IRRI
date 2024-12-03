@@ -91,7 +91,10 @@ export default function Contact() {
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">お問い合わせ内容 <span className="text-red-500">*</span></label>
             <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required className="mt-1" />
           </div>
-          <Button type="submit" className="w-full">送信</Button>
+          <Button type="submit" className="w-full" disabled={loading}>
+          {loading ? "送信中..." : "送信"}
+          </Button>
+
         </form>
       </main>
       <footer className="bg-gray-800 text-white py-6">
