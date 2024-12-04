@@ -91,7 +91,7 @@ export default function Seminar() {
               </div>
               <div className="sm:col-span-1">
                 <dt className="text-sm font-medium text-gray-500">時間</dt>
-                <dd className="mt-1 text-sm text-gray-900">15:00 - 15:30 JST</dd>
+                <dd className="mt-1 text-sm text-gray-900">12月 11日 11:00～11:30、15:00～15:30、12月 12日 15:00〜15:30、12月 14日 11:00～11:30、15:00～15:30</dd>
               </div>
               <div className="sm:col-span-1">
                 <dt className="text-sm font-medium text-gray-500">場所</dt>
