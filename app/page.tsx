@@ -125,7 +125,7 @@ export default function Home() {
 <section className="bg-white py-16 border-t border-gray-200">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
-      翻訳者プロフィール
+      翻訳責任者プロフィール
     </h2>
     <Card className="bg-gray-50 border-gray-200 max-w-2xl mx-auto">
       <CardHeader>

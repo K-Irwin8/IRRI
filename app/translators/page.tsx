@@ -10,8 +10,7 @@ const translators = [
     bio: "慶應義塾大学商学部で会計学を専攻。外資系コンサルティングファームで上場企業のプロジェクトに従事後、IR翻訳総合研究所を設立。英国と日本で現地教育を受け、バイリンガルである。",
     specialties: ["金融分野日英翻訳","財務会計", "企業財務"],
     qualifications: [
-      "英検1級",
-      "TOEIC 990点"
+      "英検1級"
     ],
     experience: [
       "東証プライム市場上場企業の決算短信（80社以上）",
@@ -31,7 +30,7 @@ export default function Translators() {
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-extrabold text-gray-900 text-center mb-8">翻訳者プロフィール</h1>
+        <h1 className="text-3xl font-extrabold text-gray-900 text-center mb-8">翻訳責任者プロフィール</h1>
         <div className="grid grid-cols-1 gap-8">
           {translators.map((translator, index) => (
             <Card key={index} className="bg-white shadow-lg">
