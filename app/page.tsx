@@ -186,7 +186,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">IR Translation Experts</h3>
+              <h3 className="text-lg font-semibold mb-4">IR翻訳総合研究所</h3>
               <p className="text-sm text-gray-300">
                 2025年英文開示義務化に対応した、高品質かつ効率的なIR資料英語翻訳サービスを提供し、日本企業のグローバルなコミュニケーションをサポートいたします。
               </p>
